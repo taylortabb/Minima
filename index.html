@@ -23,6 +23,26 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
 
+    <style>
+    .collapsible {
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+    }
+
+    .active, .collapsible:hover {
+      /*  background-color: #555;*/
+    }
+
+    .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+  </style>
+
   <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -41,6 +61,99 @@
             This uber simple generator creates <em>ultra minimal</em> one page websites you can save and deploy on GitHub pages for free. Consider it a brief guide to getting started on your little corner of the web for those of us without web design skills ❤ 
             <!--      <a href="http://tabb.me/" target="_blank">Taylor Tabb</a></h4> -->
           </h6>
+
+          <div class="collapsible"> <h6>Once you've generated your site, save the page to your computer ⌘+S then click here to for a domain name and hosting.</h6></div>
+
+          <div class="content">
+            
+            <h4>1.0 Domain Names</h4>  
+            <h6>A domain name is your custom URL. The address that points a browser to the content of your personal site. Domains are purchased through registrars— We'll be using Namecheap, because they offer free domains to students. Start by heading to <a href="https://nc.me/" target="_blank">https://nc.me</a>.
+            </h6>
+
+            <h5>1.1 Search for the domain name of your dreams </h5>
+            <h6>A domain name should be short, succient, and easy to type. Many people prefer .com, .org, .me or .io becasuse they're easy to recognize. Consider something like lastname.me, firstnamelastinitial.com, firstnamelastname.io, other personally identifiable terms.
+            </h6>
+            <h6>
+              Once you've found a domain name you like, click "Complete the Order." In the next screen, select "GitHub Pages," and give your .edu email address when asked. 
+            </h6>
+            <h6>
+              You'll be asked a fair bit of personal information during registration— as long as you select "whois guard," this information is not made public. 
+            </h6>
+
+            <h4>2.0 Set Up Hosting</h4>
+            <h6>A hosting service is what will serve your webpages to everyone who views your site. While traditionally expensive, GitHub offers a free hosting package.
+            </h6>
+
+            <h5>2.1 Create a GitHub Account </h5>
+            <h6>Head to <a href="https://github.com/" target="_blank">github.com</a> and create an account. 
+            </h6>
+
+            <h5>2.2 Create a GitHub Pages Repository </h5>
+            <h6>Now we need to create the a repository to store and host your site files in. On GitHub, click the + in the top right corner, and select "New Repository" and name it <code>username.github.io</code>, where you replace <code>username</code> with you actual GitHub username. Now navigate to this repository, and create a new file called <code>index.html</code>. Type anything (or nothing) into this document and hit save (we will delete this later) </h6> 
+
+                    <h4>3.0 Uploading Your Site</h4>
+            <h6>Now we'll get your site online </h6>
+
+            <h5>3.1 Set up GitHub Desktop</h5>
+            <h6>>Head to your GitHub account on <a href="https://github.com/" target="_blank">github.com</a> and click on your <code>username</code>.github.io repository, then click <code>Clone or Download</code>><code>Open in Desktop</code>
+
+            <h5>3.2 Uploading the Files <a id="generator"></a></h5> 
+            <h6>If you have any interest in customizing your site and understanding how it works, skip this step and go to <em>3.2 Setup the Demo Site</em>! If all you want is something simple and pretty, fill out the forms below! [steps to save webpage and put in repo]</h6>
+
+            <h6> Now click <code>Settings</code> scroll down to GitHub Pages, and type in your domain name under Custom Domain. Click Save.
+
+              <h5>2.2 Linking Your Namecheap Domain to GitHub Pages</h5>
+              <h6>Now we need to direct your domain name to your github pages repo.</h6> 
+              <h6> Log into Namecheap.com, then click <code>Domain List</code> > <code>manage</code> > <code>Advanced DNS</code>. You'll now need to edit and create new records to match the table below</h6>
+
+              <table class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Host</th>
+                    <th>Value</th>
+                    <th>TTL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CNAME Record</td>
+                    <td>WWW</td>
+                    <td><code>your-GitHub-username</code>@github.io</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.108.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.109.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.110.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.111.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h6> Now click <code>Save All Changes</code>. Your GitHub Pages and Domain name are now linked! Give it ~10 min for the internet nodes to catch up to these changes, then your site will be vieweable at your domain. </h6>
+
+
+          </div>
+
           <table class="u-full-width">
             <thead>
               <tr>
@@ -55,7 +168,7 @@
 
           <div class="row">
 
-            <form target="_blank" action="https://us-central1-flipper-1000.cloudfunctions.net/real_site_generator_html" method="get">
+            <form target="_blank" action="https://us-central1-flipper-1000.cloudfunctions.net/index" method="get">
               <div class="row">
 
                 <div class="five columns">
@@ -152,6 +265,8 @@
 
 
 
+
+
             <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
 
               <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
@@ -164,6 +279,22 @@
       </div>
     </div>
 
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
