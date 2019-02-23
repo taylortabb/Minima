@@ -65,23 +65,31 @@
           <div class="collapsible"> <h6>Once you've generated your site, save the page to your computer ⌘+S then click here to for a domain name and hosting.</h6></div>
 
           <div class="content">
-            
+
+            <table class="u-full-width">
+              <thead>
+                <tr>
+                  <th></th>
+                </tr>
+              </thead>
+            </table>
             <h4>1.0 Domain Names</h4>  
-            <h6>A domain name is your custom URL. The address that points a browser to the content of your personal site. Domains are purchased through registrars— We'll be using Namecheap, because they offer free domains to students. Start by heading to <a href="https://nc.me/" target="_blank">https://nc.me</a>.
+            <h6>A domain name is your custom URL. The address that points a browser to the content of your personal site. Domains are purchased through registrars— We'll be using Namecheap, because they offer free domains to students.
             </h6>
 
             <h5>1.1 Search for the domain name of your dreams </h5>
-            <h6>A domain name should be short, succient, and easy to type. Many people prefer .com, .org, .me or .io becasuse they're easy to recognize. Consider something like lastname.me, firstnamelastinitial.com, firstnamelastname.io, other personally identifiable terms.
+
+            <h6>Start by heading to <a href="https://nc.me/" target="_blank">https://nc.me</a>. A domain name should be short, succient, and easy to type. Many people prefer .com, .org, .me or .io becasuse they're easy to recognize.
             </h6>
             <h6>
               Once you've found a domain name you like, click "Complete the Order." In the next screen, select "GitHub Pages," and give your .edu email address when asked. 
             </h6>
             <h6>
-              You'll be asked a fair bit of personal information during registration— as long as you select "whois guard," this information is not made public. 
+              You'll be asked a fair bit of personal information during registration— as long as you select "Whois Guard," this information is not made public. 
             </h6>
 
             <h4>2.0 Set Up Hosting</h4>
-            <h6>A hosting service is what will serve your webpages to everyone who views your site. While traditionally expensive, GitHub offers a free hosting package.
+            <h6>A hosting service is what will serve your webpages to everyone who views your site. GitHub offers a free hosting package.
             </h6>
 
             <h5>2.1 Create a GitHub Account </h5>
@@ -89,22 +97,15 @@
             </h6>
 
             <h5>2.2 Create a GitHub Pages Repository </h5>
-            <h6>Now we need to create the a repository to store and host your site files in. On GitHub, click the + in the top right corner, and select "New Repository" and name it <code>username.github.io</code>, where you replace <code>username</code> with you actual GitHub username. Now navigate to this repository, and create a new file called <code>index.html</code>. Type anything (or nothing) into this document and hit save (we will delete this later) </h6> 
+            <h6>On GitHub, click the + in the top right corner, and select "New Repository" and name it <code>username.github.io</code>; replace <code>username</code> with you actual GitHub username. </h6>
 
-                    <h4>3.0 Uploading Your Site</h4>
-            <h6>Now we'll get your site online </h6>
-
-            <h5>3.1 Set up GitHub Desktop</h5>
-            <h6>>Head to your GitHub account on <a href="https://github.com/" target="_blank">github.com</a> and click on your <code>username</code>.github.io repository, then click <code>Clone or Download</code>><code>Open in Desktop</code>
-
-            <h5>3.2 Uploading the Files <a id="generator"></a></h5> 
-            <h6>If you have any interest in customizing your site and understanding how it works, skip this step and go to <em>3.2 Setup the Demo Site</em>! If all you want is something simple and pretty, fill out the forms below! [steps to save webpage and put in repo]</h6>
+            <h6>Now navigate to this repository, and upload the <code>index.html</code> you saved from the generator.</h6> 
 
             <h6> Now click <code>Settings</code> scroll down to GitHub Pages, and type in your domain name under Custom Domain. Click Save.
 
-              <h5>2.2 Linking Your Namecheap Domain to GitHub Pages</h5>
-              <h6>Now we need to direct your domain name to your github pages repo.</h6> 
-              <h6> Log into Namecheap.com, then click <code>Domain List</code> > <code>manage</code> > <code>Advanced DNS</code>. You'll now need to edit and create new records to match the table below</h6>
+            <h5>2.2 Linking Your Namecheap Domain to GitHub Pages</h5>
+            <h6>Now we need to direct your domain name to your github pages repo.</h6> 
+            <h6>Log into Namecheap.com, then click <code>Domain List</code> > <code>manage</code> > <code>Advanced DNS</code>. You'll now need to edit and create new records to match the table below</h6>
 
               <table class="u-full-width">
                 <thead>
@@ -152,150 +153,140 @@
               <h6> Now click <code>Save All Changes</code>. Your GitHub Pages and Domain name are now linked! Give it ~10 min for the internet nodes to catch up to these changes, then your site will be vieweable at your domain. </h6>
 
 
-          </div>
+            </div>
 
-          <table class="u-full-width">
-            <thead>
-              <tr>
-                <th></th>
-              </tr>
-            </thead>
-          </table>
+            <table class="u-full-width">
+              <thead>
+                <tr>
+                  <th></th>
+                </tr>
+              </thead>
+            </table>
 
 
-          <h5><a id="generator"></a></h5> 
-          <h6> </h6>
+            <h5><a id="generator"></a></h5> 
+            <h6> </h6>
 
-          <div class="row">
+            <div class="row">
 
-            <form target="_blank" action="https://us-central1-flipper-1000.cloudfunctions.net/index" method="get">
-              <div class="row">
+              <form target="_blank" action="https://us-central1-flipper-1000.cloudfunctions.net/index" method="get">
+                <div class="row">
 
-                <div class="five columns">
-                  <label for="exampleTextInput">First Name</label>
-                  <input name="firstname" class="u-full-width" type="text" placeholder="Moana" id="exampleTextInput">
-                </div>
+                  <div class="five columns">
+                    <label for="exampleTextInput">First Name</label>
+                    <input name="firstname" class="u-full-width" type="text" placeholder="Moana" id="exampleTextInput">
+                  </div>
 
-                <div class="five columns">
-                  <label for="exampleTextInput">Last Name</label>
-                  <input name="lastname"class="u-full-width" type="Text" placeholder="Wailiki" id="exampleTextInput">
-                </div>
+                  <div class="five columns">
+                    <label for="exampleTextInput">Last Name</label>
+                    <input name="lastname"class="u-full-width" type="Text" placeholder="Wailiki" id="exampleTextInput">
+                  </div>
 
-                <div class="two columns">
-                  <label for="exampleTextInput"> An <a href="https://www.emojicopy.com/" target="_blank">Emoji</a></label>
-                  <input name="emoji" class="u-full-width" type="Text" placeholder="🏝" id="exampleTextInput">
-                </div>
+                  <div class="two columns">
+                    <label for="exampleTextInput"> An <a href="https://www.emojicopy.com/" target="_blank">Emoji</a></label>
+                    <input name="emoji" class="u-full-width" type="Text" placeholder="🏝" id="exampleTextInput">
+                  </div>
 
-              </div>
-
-              <div class="row">
-
-                <div class="four columns">
-                  <label for="exampleTextInput">I'm a...</label>
-                  <input name="iam1_title" class="u-full-width" type="Text" placeholder="Programmer" id="exampleTextInput">
-                </div>
-
-                <div class="four columns">
-                  <label for="exampleTextInput">at...</label>
-                  <input name="iam1_at" class="u-full-width" type="Text" placeholder="Carnegie Mellon University" id="exampleTextInput">
-                </div>
-
-                <div class="four columns">
-                  <label for="exampleTextInput">Website Link</label>
-                  <input name="iam1_link" class="u-full-width" type="Text" placeholder="https://www.cmu.edu/" id="exampleTextInput">
-                </div>
-
-              </div>
-
-              <div class="row">
-
-                <div class="four columns">
-                  <label for="exampleTextInput">I'm a...</label>
-                  <input name="iam2_title" class="u-full-width" type="Text" placeholder="Teaching Assistant" id="exampleTextInput">
-                </div>
-
-                <div class="four columns">
-                  <label for="exampleTextInput">at...</label>
-                  <input name="iam2_at" class="u-full-width" type="Text" placeholder="15-112" id="exampleTextInput">
-                </div>
-
-                <div class="four columns">
-                  <label for="exampleTextInput">Website Link</label>
-                  <input name="iam2_link" class="u-full-width" type="Text" placeholder="https://www.cs.cmu.edu/~112/" id="exampleTextInput">
-                </div>
-
-              </div>
-
-              <div class="row">
-
-                <div class="four columns">
-                  <label for="exampleTextInput">I'm a...</label>
-                  <input name="iam3_title" class="u-full-width" type="Text" placeholder="Cheif" id="exampleTextInput">
-                </div>
-
-                <div class="four columns">
-                  <label for="exampleTextInput">at...</label>
-                  <input name="iam3_at" class="u-full-width" type="Text" placeholder="Motonui" id="exampleTextInput">
-                </div>
-
-                <div class="four columns">
-                  <label for="exampleTextInput">Website Link</label>
-                  <input name="iam3_link" class="u-full-width" type="Text" placeholder="https://www.islands.com/disney-moana-movie-inspired-polynesian-islands-south-pacific" id="exampleTextInput">
                 </div>
 
                 <div class="row">
 
                   <div class="four columns">
-                    <label for="exampleTextInput">Font</label>
-                    <input type="radio" name="font" value="Raleway"><span style="font-family:Raleway">Raleway</span>
-                    <input type="radio" name="font" value="Inconsolata"><span style="font-family:Inconsolata">Inconsolata</span>
-                    <input type="radio" name="font" value="Roboto"><span style="font-family:Roboto">Roboto</span>
+                    <label for="exampleTextInput">I'm a...</label>
+                    <input name="iam1_title" class="u-full-width" type="Text" placeholder="Programmer" id="exampleTextInput">
+                  </div>
+
+                  <div class="four columns">
+                    <label for="exampleTextInput">at...</label>
+                    <input name="iam1_at" class="u-full-width" type="Text" placeholder="Carnegie Mellon University" id="exampleTextInput">
+                  </div>
+
+                  <div class="four columns">
+                    <label for="exampleTextInput">Website Link</label>
+                    <input name="iam1_link" class="u-full-width" type="Text" placeholder="https://www.cmu.edu/" id="exampleTextInput">
                   </div>
 
                 </div>
 
+                <div class="row">
+
+                  <div class="four columns">
+                    <label for="exampleTextInput">I'm a...</label>
+                    <input name="iam2_title" class="u-full-width" type="Text" placeholder="Teaching Assistant" id="exampleTextInput">
+                  </div>
+
+                  <div class="four columns">
+                    <label for="exampleTextInput">at...</label>
+                    <input name="iam2_at" class="u-full-width" type="Text" placeholder="15-112" id="exampleTextInput">
+                  </div>
+
+                  <div class="four columns">
+                    <label for="exampleTextInput">Website Link</label>
+                    <input name="iam2_link" class="u-full-width" type="Text" placeholder="https://www.cs.cmu.edu/~112/" id="exampleTextInput">
+                  </div>
+
+                </div>
+
+                <div class="row">
+
+                  <div class="four columns">
+                    <label for="exampleTextInput">I'm a...</label>
+                    <input name="iam3_title" class="u-full-width" type="Text" placeholder="Cheif" id="exampleTextInput">
+                  </div>
+
+                  <div class="four columns">
+                    <label for="exampleTextInput">at...</label>
+                    <input name="iam3_at" class="u-full-width" type="Text" placeholder="Motonui" id="exampleTextInput">
+                  </div>
+
+                  <div class="four columns">
+                    <label for="exampleTextInput">Website Link</label>
+                    <input name="iam3_link" class="u-full-width" type="Text" placeholder="https://www.islands.com/disney-moana-movie-inspired-polynesian-islands-south-pacific" id="exampleTextInput">
+                  </div>
+
+                  <div class="row">
+
+                    <div class="four columns">
+                      <label for="exampleTextInput">Font</label>
+                      <input type="radio" name="font" value="Raleway"><span style="font-family:Raleway">Raleway</span>
+                      <input type="radio" name="font" value="Inconsolata"><span style="font-family:Inconsolata">Inconsolata</span>
+                      <input type="radio" name="font" value="Roboto"><span style="font-family:Roboto">Roboto</span>
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+                <label for="exampleMessage">Short Mission Statement</label>
+                <textarea name="mission" class="u-full-width" placeholder="I want to build tools that solve problems for people and and make the world easier to explore." id="exampleMessage"></textarea>
+
+                <input class="button-primary" type="submit" value="Generate!" target="_blank">
+              </form>
 
               </div>
-
-              <label for="exampleMessage">Short Mission Statement</label>
-              <textarea name="mission" class="u-full-width" placeholder="I want to build tools that solve problems for people and and make the world easier to explore." id="exampleMessage"></textarea>
-
-              <input class="button-primary" type="submit" value="Generate!" target="_blank">
-            </form>
-
-
-
-
-
-            <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
-
-              <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
-
             </div>
-          </div>
 
-          
+          </div>
         </div>
       </div>
-    </div>
 
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
 
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } 
-        });
-      }
-    </script>
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+      </script>
+
 </body>
 </html>
