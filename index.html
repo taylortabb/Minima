@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,300,600" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Inconsolata:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+  </head>
+  <body>
+
+  <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+      <div class="row">
+        <div style="margin-top: 5%">
+
+          <h2 id="title">Ultra Minimal Site Generator </h2>
+          <h6> 
+            This uber simple generator creates <em>ultra minimal</em> one page websites you can save and deploy on GitHub pages for free. Consider it a brief guide to getting started on your little corner of the web for those of us without web design skills ❤ 
+            <!--      <a href="http://tabb.me/" target="_blank">Taylor Tabb</a></h4> -->
+          </h6>
+          <table class="u-full-width">
+            <thead>
+              <tr>
+                <th></th>
+              </tr>
+            </thead>
+          </table>
+
+
+          <h5><a id="generator"></a></h5> 
+          <h6> </h6>
+
+          <div class="row">
+
+            <form target="_blank" action="https://us-central1-flipper-1000.cloudfunctions.net/real_site_generator_html" method="get">
+              <div class="row">
+
+                <div class="five columns">
+                  <label for="exampleTextInput">First Name</label>
+                  <input name="firstname" class="u-full-width" type="text" placeholder="Moana" id="exampleTextInput">
+                </div>
+
+                <div class="five columns">
+                  <label for="exampleTextInput">Last Name</label>
+                  <input name="lastname"class="u-full-width" type="Text" placeholder="Wailiki" id="exampleTextInput">
+                </div>
+
+                <div class="two columns">
+                  <label for="exampleTextInput"> An <a href="https://www.emojicopy.com/" target="_blank">Emoji</a></label>
+                  <input name="emoji" class="u-full-width" type="Text" placeholder="🏝" id="exampleTextInput">
+                </div>
+
+              </div>
+
+              <div class="row">
+
+                <div class="four columns">
+                  <label for="exampleTextInput">I'm a...</label>
+                  <input name="iam1_title" class="u-full-width" type="Text" placeholder="Programmer" id="exampleTextInput">
+                </div>
+
+                <div class="four columns">
+                  <label for="exampleTextInput">at...</label>
+                  <input name="iam1_at" class="u-full-width" type="Text" placeholder="Carnegie Mellon University" id="exampleTextInput">
+                </div>
+
+                <div class="four columns">
+                  <label for="exampleTextInput">Website Link</label>
+                  <input name="iam1_link" class="u-full-width" type="Text" placeholder="https://www.cmu.edu/" id="exampleTextInput">
+                </div>
+
+              </div>
+
+              <div class="row">
+
+                <div class="four columns">
+                  <label for="exampleTextInput">I'm a...</label>
+                  <input name="iam2_title" class="u-full-width" type="Text" placeholder="Teaching Assistant" id="exampleTextInput">
+                </div>
+
+                <div class="four columns">
+                  <label for="exampleTextInput">at...</label>
+                  <input name="iam2_at" class="u-full-width" type="Text" placeholder="15-112" id="exampleTextInput">
+                </div>
+
+                <div class="four columns">
+                  <label for="exampleTextInput">Website Link</label>
+                  <input name="iam2_link" class="u-full-width" type="Text" placeholder="https://www.cs.cmu.edu/~112/" id="exampleTextInput">
+                </div>
+
+              </div>
+
+              <div class="row">
+
+                <div class="four columns">
+                  <label for="exampleTextInput">I'm a...</label>
+                  <input name="iam3_title" class="u-full-width" type="Text" placeholder="Cheif" id="exampleTextInput">
+                </div>
+
+                <div class="four columns">
+                  <label for="exampleTextInput">at...</label>
+                  <input name="iam3_at" class="u-full-width" type="Text" placeholder="Motonui" id="exampleTextInput">
+                </div>
+
+                <div class="four columns">
+                  <label for="exampleTextInput">Website Link</label>
+                  <input name="iam3_link" class="u-full-width" type="Text" placeholder="https://www.islands.com/disney-moana-movie-inspired-polynesian-islands-south-pacific" id="exampleTextInput">
+                </div>
+
+                <div class="row">
+
+                  <div class="four columns">
+                    <label for="exampleTextInput">Font</label>
+                    <input type="radio" name="font" value="Raleway"><span style="font:Raleway">Raleway</span>
+                    <input type="radio" name="font" value="Inconsolata"><span style="font:Inconsola">Inconsolata</span>
+                    <input type="radio" name="font" value="Roboto"><span style="font:Roboto">Roboto</span>
+                  </div>
+
+                </div>
+
+
+              </div>
+
+              <label for="exampleMessage">Short Mission Statement</label>
+              <textarea name="mission" class="u-full-width" placeholder="I want to build tools that solve problems for people and and make the world easier to explore." id="exampleMessage"></textarea>
+
+              <input class="button-primary" type="submit" value="Generate!" target="_blank">
+            </form>
+
+
+
+            <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+
+              <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
