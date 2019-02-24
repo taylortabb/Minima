@@ -106,9 +106,9 @@
 
             <h6> Now click <code>Settings</code> scroll down to GitHub Pages, and type in your domain name under Custom Domain. Click Save.
 
-            <h5>2.2 Linking Your Namecheap Domain to GitHub Pages</h5>
-            <h6>Now we need to direct your domain name to your github pages repo.</h6> 
-            <h6>Log into Namecheap.com, then click <code>Domain List</code> > <code>manage</code> > <code>Advanced DNS</code>. You'll now need to edit and create new records to match the table below</h6>
+              <h5>2.2 Linking Your Namecheap Domain to GitHub Pages</h5>
+              <h6>Now we need to direct your domain name to your github pages repo.</h6> 
+              <h6>Log into Namecheap.com, then click <code>Domain List</code> > <code>manage</code> > <code>Advanced DNS</code>. You'll now need to edit and create new records to match the table below</h6>
 
               <table class="u-full-width">
                 <thead>
@@ -165,7 +165,6 @@
                 </tr>
               </thead>
             </table>
-
 
             <h5><a id="generator"></a></h5> 
             <h6> </h6>
@@ -249,7 +248,7 @@
 
                   <div class="row">
 
-                    <div class="twelve columns">
+                <!--     <div class="twelve columns">
                       <label for="exampleTextInput">Font</label>
                       <input type="radio" name="font" value="Raleway"><span style="font-family:Raleway">&nbsp Raleway </span> &nbsp&nbsp&nbsp
                       <input type="radio" name="font" value="Inconsolata"><span style="font-family:Inconsolata"> Inconsolata </span> &nbsp&nbsp&nbsp&nbsp
@@ -257,10 +256,17 @@
                       <input type="radio" name="font" value="Lato"><span style="font-family:Lato"> &nbsp Lato </span> &nbsp&nbsp&nbsp&nbsp
                       <input type="radio" name="font" value="Merriweather"><span style="font-family:Merriweather">&nbsp Merriweather </span> &nbsp&nbsp&nbsp&nbsp
                       <input type="radio" name="font" value="Ubuntu"><span style="font-family:Ubuntu">&nbsp Ubuntu </span>
+                    </div> -->
+
+                    <div class="twelve columns">
+                      <label for="exampleTextInput">Style</label>
+                      <input type="radio" name="template" value="lacma">
+                      Lacma &nbsp&nbsp&nbsp
+                      <input type="radio" name="template" value="inka"> Inka
                     </div>
 
                   </div>
-
+<!-- 
                   <div class="row">
 
                     <div class="twelve columns">
@@ -268,7 +274,7 @@
                       <input type="color" name="color" value="#1EAEDB">
                     </div>
 
-                  </div>
+                  </div> -->
 
 
                 </div>
@@ -278,30 +284,30 @@
 
                 <input class="button-primary" type="submit" value="Generate!" target="_blank">
               </form>
-<h6> <span style="font-size:11px">Made by <a href="https://tabb.me/" target="_blank">Taylor Tabb</a></span></h6>
-              </div>
+              <h6> <span style="font-size:11px">Made by <a href="https://tabb.me/" target="_blank">Taylor Tabb</a></span></h6>
             </div>
-
           </div>
+
         </div>
       </div>
+    </div>
 
-      <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
 
-        for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight){
-              content.style.maxHeight = null;
-            } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-            } 
-          });
-        }
-      </script>
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
 
-</body>
-</html>
+  </body>
+  </html>
