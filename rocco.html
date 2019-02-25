@@ -17,7 +17,7 @@
 
   <!-- FONT | To pick a new font, head to https://fonts.google.com/
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Vollkorn:300,400,500,600,700" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> 
 
   <!-- CSS | These are the stylesheets that make this site look as it does
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -30,19 +30,18 @@
   </head>
 <style>
   body {
-  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#101010; 
-  background-color: #FFD1D7 ;"
+  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:white; 
+  background-color: #121b37;"
   }
   
   a {
-  color: #101010;
-  text-decoration:underline; }
+  color: goldenrod;
+  text-decoration:none; }
   
   a:hover {
-  color: #101010;
-  text-decoration:underline;
-  font-style: italic; }
+  color: goldenrod;
+  text-decoration:underline; }
   
   </style>
 <body>
@@ -51,28 +50,17 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
       <div class="row">
-        <div class="twelve columns" style="margin-top: 10%">
+        <div class="one-full column" style="margin-top: 10%">
 
-         <h1 id="title"><span style="font-size:1.25em; font-weight:600;">
-
-         {{ firstname }} {{ lastname }}
-
-       </span></h1>
-          
-          <h5 style="font-family:Vollkorn"> 
-
-{{ iam1_title }} at <a href="{{ iam1_link }}" target="_blank">{{ iam1_at }}</a>. {{ iam2_title }} at <a href="{{ iam2_link }}" target="_blank">{{ iam2_at }}</a>. And {{ iam3_title }} at <a href="{{ iam3_link }}" target="_blank">{{ iam3_at }}</a></h5>
-
-          </h5>
+         <h1 id="title"><span style="font-size:1.5em; font-weight:700">Hi, I'm {{ firstname}}.</span></h1>
+          <h1 style="font-weight:700"> 
             
-            <h5 style="font-family:Vollkorn;"> 
+            {{ iam1_title }} at <a href="{{ iam1_link }}" target="_blank">{{ iam1_at }}</a>. {{ iam2_title }} at <a href="{{ iam2_link }}" target="_blank">{{ iam2_at }}</a>. And {{ iam3_title }} at <a href="{{ iam3_link }}" target="_blank">{{ iam3_at }}</a> {{mission}}</h5>
 
-             {{mission}}
-
-            </h5>
-
-            <h6 style="font-family:Vollkorn;"> <a href="resume.pdf" target="_blank">Resume</a> //
-            <a href="about.html" target="_blank">About Me</a> //
+            <h6 style="font-weight:700"><a href="resume.pdf" target="_blank">Resume
+            </a>/
+            <a href="about.html" target="_blank">About Me</a>
+            /
             <a href="third.html" target="_blank">Calendar</a>
           </h6>
 
