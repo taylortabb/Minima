@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,300,600" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Inconsolata:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,600" rel="stylesheet" type="text/css"> 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,600" rel="stylesheet" type="text/css"> 
+
+  <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <style>
+
+    img.round {
+
+      border-radius: 10px;
+
+    }
+    .collapsible {
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+    }
+
+    .active, .collapsible:hover {
+      /*  background-color: #555;*/
+    }
+
+    .content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+  </style>
+
+  <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+  </head>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74339615-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      token: "7e4126c4-8b3b-47f5-a0d2-6a45fd95d3a4",
+      host: "https://wchat.freshchat.com"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://wchat.freshchat.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}function initiateCall(){initialize(document,"freshchat-js-sdk")}window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>
+
+
+  <body>
+
+  <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+      <div class="row">
+        <div style="margin-top: 4%">
+
+          <h2 id="title">Ultra Minimal Site Generator</h2>
+          <h6> 
+            This uber simple generator creates <em>ultra minimal</em> one page websites you can save and deploy on GitHub pages for free, with absolutely no web development skills needed. It's not the most robust tool ever, but it does the job! ☺ 
+            <!--      <a href="http://tabb.me/" target="_blank">Taylor Tabb</a></h4> -->
+          </h6>
+
+          <div class="collapsible"> <h6>Fill out <em>all</em> of the form below (you can delete, edit, or add setions yourself later). Then, once you've generated your site, save the page to your computer ⌘+S and click <em>here</em> to for info on free* domain names and hosting.</h6></div>
+
+          <div class="content">
+
+            <table class="u-full-width">
+              <thead>
+                <tr>
+                  <th></th>
+                </tr>
+              </thead>
+            </table>
+            <h4>1.0 Domain Names</h4>  
+            <h6>A domain name is your custom URL. The address that points a browser to the content of your personal site. Domains are purchased through registrars— We'll be using Namecheap, because they offer free domains to students.
+            </h6>
+
+            <h5>1.1 Search for the domain name of your dreams </h5>
+
+            <h6>Start by heading to <a href="https://nc.me/" target="_blank">https://nc.me</a>. A domain name should be short, succinct, and easy to type. Many people prefer .com, .org, .me or .io because they're easy to recognize.
+            </h6>
+            <h6>
+              Once you've found a domain name you like, click "Complete the Order." In the next screen, select "GitHub Pages," and give your .edu email address when asked. 
+            </h6>
+            <h6>
+              You'll be asked a fair bit of personal information during registration— as long as you select "Whois Guard," this information is not made public. 
+            </h6>
+
+            <h4>2.0 Set Up Hosting</h4>
+            <h6>A hosting service is what will serve your webpages to everyone who views your site. GitHub offers a free hosting package.
+            </h6>
+
+            <h5>2.1 Create a GitHub Account </h5>
+            <h6>Head to <a href="https://github.com/" target="_blank">github.com</a> and create an account. 
+            </h6>
+
+            <h5>2.2 Create a GitHub Pages Repository </h5>
+            <h6>On GitHub, click the + in the top right corner, and select "New Repository" and name it <code>username.github.io</code>; replace <code>username</code> with you actual GitHub username. </h6>
+
+            <h6>Now navigate to this repository, and upload the <code>index.html</code> you saved from the generator. Additionally, if you'd like the the resume link to, upload your resume (with the title "resume.pdf"), or delete the line in index.html including <code> a href="resume.pdf" target="_blank" </code> note that Pop theme has no resume link.</h6> 
+
+            <h6> Now click <code>Settings</code> scroll down to GitHub Pages, and type in your domain name under Custom Domain. Click Save.
+
+              <h5>2.3 Linking Your Namecheap Domain to GitHub Pages</h5>
+              <h6>Now we need to direct your domain name to your github pages repo.</h6> 
+              <h6>Log into Namecheap.com, then click <code>Domain List</code> > <code>manage</code> > <code>Advanced DNS</code>. You'll now need to edit and create new records to match the table below</h6>
+
+              <table class="u-full-width">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Host</th>
+                    <th>Value</th>
+                    <th>TTL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CNAME Record</td>
+                    <td>WWW</td>
+                    <td><code>your-GitHub-username</code>@github.io</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.108.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.109.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.110.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                  <tr>
+                    <td>A Record</td>
+                    <td>@</td>
+                    <td>185.199.111.153</td>
+                    <td>Automatic</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h6> Now click <code>Save All Changes</code>. Your GitHub Pages and Domain name are now linked! Give it ~10 min for the internet nodes to catch up to these changes, then your site will be viewable at your domain. </h6>
+
+              <h4>2.0 Maintaininig, Growing, and Customizing</h4>
+              
+              <h6>At this point, you've got yourself a website! What comes next is up to you. </h6>
+
+              <h5>4.1 Building Your Site Out With Skeleton.css</h5>
+              
+              <h6>Your current GitHub Pages hosting is great for simple websites like the one we've created. You can even create more pages (About Me, Calendar, Photos, Blog, Music, etc) to build your site out. Just start with a copy of the current frame of index.html, and edit and change to craft what you want! Variations of Skeleton CSS is the stylesheet these themes (except Terminal) are using, and it has fantastic and simple (but perhaps a little outdated) documentation at <a href="http://getskeleton.com/" target="_blank">getskeleton.com</a> to help you get styled up. </h6>
+
+              <h6> 
+
+                <h5>4.2 HTML5UP, Squarespace, and More</h5>
+                <h6>It's only a little more complex to take your website to the next level. Hundreds of free templates exist online, and some are pretty spectacular. <a href="https://html5up.net/" target="_blank">html5up.net</a> has some great options. If you use one of these, you'll be replacing everything in your current website's folder.</h6>
+
+                <h6>Then, there's the pay option— <a href="https://www.squarespace.com/" target="_blank">Squarespace</a>. Squarespace is absolutely fantastic for building totally beautiful portfolio sites with a simple drag and drop interface, no code required. There is 50% off first year with a .edu email address</h6>
+
+
+                <h6> <span style="font-size:11px">*domain free for 1yr with a .edu email address</span></h6>
+              </div>
+
+              <table class="u-full-width">
+                <thead>
+                  <tr>
+                    <th></th>
+                  </tr>
+                </thead>
+              </table>
+
+              <h5><a id="generator"></a></h5> 
+              <h6> </h6>
+
+              <div class="row">
+
+                <form target="_blank" action="https://us-central1-flipper-1000.cloudfunctions.net/index" method="get">
+                  <div class="row">
+
+                    <div class="five columns">
+                      <label for="exampleTextInput">First Name</label>
+                      <input name="firstname" class="u-full-width" type="text" placeholder="Moana" id="exampleTextInput">
+                    </div>
+
+                    <div class="five columns">
+                      <label for="exampleTextInput">Last Name</label>
+                      <input name="lastname"class="u-full-width" type="Text" placeholder="Wailiki" id="exampleTextInput">
+                    </div>
+
+                    <div class="two columns">
+                      <label for="exampleTextInput"> An <a href="https://www.emojicopy.com/" target="_blank">Emoji</a></label>
+                      <input name="emoji" class="u-full-width" type="Text" placeholder="🏝" id="exampleTextInput">
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="four columns">
+                      <label for="exampleTextInput">I'm a...</label>
+                      <input name="iam1_title" class="u-full-width" type="Text" placeholder="Programmer" id="exampleTextInput">
+                    </div>
+
+                    <div class="four columns">
+                      <label for="exampleTextInput">at...</label>
+                      <input name="iam1_at" class="u-full-width" type="Text" placeholder="Carnegie Mellon University" id="exampleTextInput">
+                    </div>
+
+                    <div class="four columns">
+                      <label for="exampleTextInput">Website Link</label>
+                      <input name="iam1_link" class="u-full-width" type="Text" placeholder="https://www.cmu.edu/" id="exampleTextInput">
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="four columns">
+                      <label for="exampleTextInput">I'm a...</label>
+                      <input name="iam2_title" class="u-full-width" type="Text" placeholder="Teaching Assistant" id="exampleTextInput">
+                    </div>
+
+                    <div class="four columns">
+                      <label for="exampleTextInput">at...</label>
+                      <input name="iam2_at" class="u-full-width" type="Text" placeholder="15-112" id="exampleTextInput">
+                    </div>
+
+                    <div class="four columns">
+                      <label for="exampleTextInput">Website Link</label>
+                      <input name="iam2_link" class="u-full-width" type="Text" placeholder="https://www.cs.cmu.edu/~112/" id="exampleTextInput">
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="four columns">
+                      <label for="exampleTextInput">I'm a...</label>
+                      <input name="iam3_title" class="u-full-width" type="Text" placeholder="Cheif" id="exampleTextInput">
+                    </div>
+
+                    <div class="four columns">
+                      <label for="exampleTextInput">at...</label>
+                      <input name="iam3_at" class="u-full-width" type="Text" placeholder="Motonui" id="exampleTextInput">
+                    </div>
+
+                    <div class="four columns">
+                      <label for="exampleTextInput">Website Link</label>
+                      <input name="iam3_link" class="u-full-width" type="Text" placeholder="https://www.islands.com/disney-moana-movie-inspired-polynesian-islands-south-pacific" id="exampleTextInput">
+                    </div>
+
+                    <div class="row">
+
+                <!--     <div class="twelve columns">
+                      <label for="exampleTextInput">Font</label>
+                      <input type="radio" name="font" value="Raleway"><span style="font-family:Raleway">&nbsp Raleway </span> &nbsp
+                      <input type="radio" name="font" value="Inconsolata"><span style="font-family:Inconsolata"> Inconsolata </span> &nbsp&nbsp
+                      <input type="radio" name="font" value="Roboto"><span style="font-family:Roboto">&nbsp Roboto </span> &nbsp&nbsp
+                      <input type="radio" name="font" value="Lato"><span style="font-family:Lato"> &nbsp Lato </span> &nbsp&nbsp
+                      <input type="radio" name="font" value="Merriweather"><span style="font-family:Merriweather">&nbsp Merriweather </span> &nbsp&nbsp
+                      <input type="radio" name="font" value="Ubuntu"><span style="font-family:Ubuntu">&nbsp Ubuntu </span>
+                    </div> -->
+                    <div class="row">
+                      <div class="two columns">
+                        <label for="exampleTextInput">Style</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="two columns">
+                        <label> 
+                          <input type="radio" name="template" value="light">&nbsp Light
+                          <img class="round" width="100%" src="images/light.png">
+                        </label>
+                      </div>
+
+                      <div class="two columns">
+                        <label> 
+                          <input type="radio" name="template" value="dark">&nbsp Dark
+                          <img class="round" width="100%" src="images/dark.png">
+                        </label>
+                      </div>
+
+                      <div class="two columns">
+                        <label> 
+                          <input type="radio" name="template" value="rosy">&nbsp Rosy
+                          <img class="round" width="100%" src="images/rosy.png">
+                        </label>
+                      </div>
+
+                      <div class="two columns">
+                        <label> 
+                          <input type="radio" name="template" value="bold">&nbsp Bold
+                          <img class="round" width="100%" src="images/bold.png">
+                        </label>
+                      </div>
+
+                      <div class="two columns">
+                        <label> 
+                          <input type="radio" name="template" value="terminal">&nbsp Terminal
+                          <img class="round" width="100%" src="images/terminal.png">
+                        </label>
+                      </div>
+
+                      <div class="two columns">
+                        <label> 
+                          <input type="radio" name="template" value="pop">&nbsp Pop
+                          <img class="round" width="100%" src="images/pop.png">
+                        </label>
+                      </div>
+
+                    </div>
+
+
+                  </div>
+                </div>
+<!-- 
+                  <div class="row">
+
+                    <div class="twelve columns">
+                      <label for="exampleTextInput">Highlight Color</label>
+                      <input type="color" name="color" value="#1EAEDB">
+                    </div>
+
+                  </div> -->
+
+
+                </div>
+
+                <label for="exampleMessage">Short Mission Statement</label>
+                <textarea name="mission" class="u-full-width" placeholder="I want to build tools that solve problems for people and and make the world easier to explore." id="exampleMessage"></textarea>
+
+                <input class="button-primary" type="submit" value="Generate!" target="_blank">
+              </form>
+              <h6> <span style="font-size:11px">Made by <a href="https://tabb.me/" target="_blank">Taylor Tabb</a></span></h6>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
+
+  </body>
+  </html>
